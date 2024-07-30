@@ -14,6 +14,31 @@ module.exports = {
       },
     ],
     '@semantic-release/github',
-    '@semantic-release/git',
+    [
+      '@semantic-release/git',
+      {
+        assets: ['*'],
+      },
+    ][
+      ('semantic-release-replace-plugin',
+      {
+        replacements: [
+          {
+            files: ['jsr.json'],
+            from: 'version = ".*"',
+            to: 'version = "${nextRelease.version}"',
+            results: [
+              {
+                file: 'jsr.json',
+                hasChanged: true,
+                numMatches: 1,
+                numReplacements: 1,
+              },
+            ],
+            countMatches: true,
+          },
+        ],
+      })
+    ],
   ],
 }
