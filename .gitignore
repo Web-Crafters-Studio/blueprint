@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Git config file
-.gitignore
+.gitconfig
