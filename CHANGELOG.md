@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Web-Crafters-Studio/blueprint/compare/v1.0.0...v1.1.0) (2024-10-17)
+
+
+### Features
+
+* **package:** update stack and make local build ok ([adbcdb6](https://github.com/Web-Crafters-Studio/blueprint/commit/adbcdb60108f4a5d48c7960919c1714031840bbb))
+
 # 1.0.0 (2024-07-30)
 
 ### Features
