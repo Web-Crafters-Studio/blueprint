@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Web-Crafters-Studio/blueprint/compare/v1.1.0...v1.1.1) (2024-10-18)
+
+
+### Bug Fixes
+
+* **button:** remove module.css reference to switch to classic css file import ([badbd2d](https://github.com/Web-Crafters-Studio/blueprint/commit/badbd2de2eaca5249dd07e4f31a844036081bbed))
+
 # [1.1.0](https://github.com/Web-Crafters-Studio/blueprint/compare/v1.0.0...v1.1.0) (2024-10-17)
 
 
