@@ -1,6 +1,6 @@
 // Setup Semantic Release plugins.
 // See https://semantic-release.gitbook.io/semantic-release/extending/plugins-list for more plugins.
-module.exports = {
+export default {
   branches: ['main'],
   plugins: [
     '@semantic-release/commit-analyzer',

@@ -3,17 +3,21 @@
   "version": "1.1.0",
   "description": "Un design system complet, réutilisable, accessible et performant.",
   "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "author": "Studio Web Crafters",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && rollup -c --bundleConfigAsCjs",
+    "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build",
     "test": "vitest",
     "storybook": "start-storybook -p 6006",

@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "jsx": "react-jsx",
 
     /* Bundler mode */
     "moduleResolution": "Bundler",
+    /* Disable interop with CommonJS to enforce ESM modules usage  */
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -22,11 +23,12 @@
 
     /* TS CONFIG */
     "declaration": true,
-    "declarationDir": "dist",
+    "declarationDir": "dist/types",
     "outDir": "dist",
     "rootDir": "src",
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    
+    "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": ["src", "global.d.ts"]
 }

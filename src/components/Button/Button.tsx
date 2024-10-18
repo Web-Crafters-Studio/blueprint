@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Button.module.css'
 
-interface ButtonProps {
+export interface ButtonProps {
   label: string
   onClick?: () => void
   disabled?: boolean

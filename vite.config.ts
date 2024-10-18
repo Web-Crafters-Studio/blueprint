@@ -8,4 +8,15 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './tests/setup.ts',
   },
+  build: {
+    target: 'esnext',
+    lib: {
+      entry: 'src/index.ts',
+      formats: ['es'],
+      fileName: 'index',
+    },
+  },
+  rollupOptions: {
+    external: ['react', 'react-dom'],
+  },
 })

@@ -1,4 +1,4 @@
-import { Button } from './Button.js'
+import { Button, ButtonProps } from './Button.js'
 import { Meta, StoryFn } from '@storybook/react'
 
 export default {
@@ -6,7 +6,7 @@ export default {
   component: Button,
 } as Meta
 
-const Template: StoryFn<any> = (args:any) => <Button {...args} />
+const Template: StoryFn<ButtonProps> = (args: ButtonProps) => <Button {...args} />
 
 export const ParDéfaut = Template.bind({})
 ParDéfaut.args = {
