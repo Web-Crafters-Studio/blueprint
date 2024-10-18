@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Button.module.css'
+import './Button.css'
 
 export interface ButtonProps {
   label: string
@@ -13,7 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   disabled = false,
 }) => {
   return (
-    <button className={styles.button} onClick={onClick} disabled={disabled}>
+    <button className="button" onClick={onClick} disabled={disabled}>
       {label}
     </button>
   )
