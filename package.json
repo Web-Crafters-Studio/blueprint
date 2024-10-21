@@ -38,7 +38,7 @@
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-actions": "^8.3.6",
     "@storybook/addon-essentials": "^8.3.5",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/react": "^8.3.5",
